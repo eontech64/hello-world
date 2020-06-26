@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dar/ontologies/2020/5/untitled-ontology-14"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dar/ontologies/2020/5/untitled-ontology-14">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Alumno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asignatura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Centro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Docente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Titulación"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Universidad"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esDocenteDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esParteDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seImparteEn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Centro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Competencias"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Créditos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Curso"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Código"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DNI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Horario"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Idioma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Obj._Aprend."/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Objetivos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Oficina"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semestre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_estudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daniel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MUIA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontologías"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oscar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UPM"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Alumno"/>
+        <Class IRI="#Personas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Docente"/>
+        <Class IRI="#Personas"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#Daniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Centro"/>
+        <NamedIndividual IRI="#FI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Titulación"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asignatura"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Docente"/>
+        <NamedIndividual IRI="#Oscar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Universidad"/>
+        <NamedIndividual IRI="#UPM"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esParteDe"/>
+        <NamedIndividual IRI="#FI"/>
+        <NamedIndividual IRI="#UPM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esParteDe"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <NamedIndividual IRI="#UPM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <NamedIndividual IRI="#FI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <NamedIndividual IRI="#MUIA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <NamedIndividual IRI="#FI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esDocenteDe"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <NamedIndividual IRI="#Ontologías"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esParteDe"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <NamedIndividual IRI="#UPM"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DNI"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>Y7535902N</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>Daniel Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plan"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tipo_estudio"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>PSC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#FI"/>
+        <Literal>Escuela Tecnica Superior de Ingenieros Informaticos (10)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Créditos"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Código"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>Master Universitario en Inteligencia Artificial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Competencias"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>CB10, CEIA1, CEIA10, CEIA2, CEIA7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Créditos"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Curso"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>2019/20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Idioma"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Inglés</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Ontological Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Obj._Aprend."/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>RA60,RA64,RA59,RA62,RA63,RA61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semestre"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Semester 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tipo"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>Opcional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal>oscar.corcho@upm.es</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Horario"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal>Tu - 10:00 - 20:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Oficina"/>
+        <NamedIndividual IRI="#Oscar"/>
+        <Literal>2209</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre"/>
+        <NamedIndividual IRI="#UPM"/>
+        <Literal>Universidad Politécnica de Madrid</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+        <Class IRI="#Docente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esDocenteDe"/>
+        <Class IRI="#Docente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esParteDe"/>
+        <Class IRI="#Centro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esParteDe"/>
+        <Class IRI="#Docente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+        <Class IRI="#Titulación"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <Class IRI="#Titulación"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esAsignaturaDe"/>
+        <Class IRI="#Titulación"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esCoordinadorDe"/>
+        <Class IRI="#Titulación"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esDocenteDe"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esParteDe"/>
+        <Class IRI="#Universidad"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esTitulacionDe"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <Class IRI="#Asignatura"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estáInscriptoA"/>
+        <Class IRI="#Titulación"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seImparteEn"/>
+        <Class IRI="#Centro"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Centro"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Competencias"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Créditos"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Créditos"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Curso"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Código"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Código"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DNI"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Email"/>
+        <Class IRI="#Docente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Horario"/>
+        <Class IRI="#Docente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Idioma"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Centro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Docente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre"/>
+        <Class IRI="#Universidad"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Obj._Aprend."/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Objetivos"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Oficina"/>
+        <Class IRI="#Docente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Plan"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Semestre"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo_estudio"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Centro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Competencias"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Créditos"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Curso"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Código"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DNI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Horario"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Idioma"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Obj._Aprend."/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Objetivos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Oficina"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Plan"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Plan_de_Estudios"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Semestre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo_estudio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alumno</IRI>
+        <Literal>Persona inscripta a una Titulación y Asignatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asignatura</IRI>
+        <Literal>Asignatura de un plan de estudios determinado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Centro</IRI>
+        <Literal>Lugar que forma parte de una universidad donde se imparten las asignaturas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Docente</IRI>
+        <Literal>Persona que imparte o es coordinador de una asignatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Titulación</IRI>
+        <Literal>Estudio universitario orientado a una determinada rama de conocimiento y cuya superación implica la obtención de un título oficial.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Universidad</IRI>
+        <Literal>Institución destinada a la enseñanza superior</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
