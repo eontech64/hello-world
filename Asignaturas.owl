@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/dar/ontologies/2020/5/untitled-ontology-14">
+    <Prefix name="" IRI="http://www.semanticweb.org/dar/ontologies/2020/5/untitled-ontology-14"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -54,6 +55,12 @@
         <ObjectProperty IRI="#seImparteEn"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Asignaturas_previas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Campus"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Centro"/>
     </Declaration>
     <Declaration>
@@ -72,6 +79,9 @@
         <DataProperty IRI="#DNI"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Dirección"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Email"/>
     </Declaration>
     <Declaration>
@@ -79,6 +89,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Idioma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#N_expediente"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#N_orden"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Nombre"/>
@@ -99,6 +115,9 @@
         <DataProperty IRI="#Plan_de_Estudios"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Recursos"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Semestre"/>
     </Declaration>
     <Declaration>
@@ -106,6 +125,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Tipo_estudio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#web"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Daniel"/>
@@ -218,6 +240,16 @@
         <Literal>Y7535902N</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#N_expediente"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal>19A054</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#N_orden"/>
+        <NamedIndividual IRI="#Daniel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">725</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#Nombre"/>
         <NamedIndividual IRI="#Daniel"/>
         <Literal>Daniel Rodriguez</Literal>
@@ -253,6 +285,11 @@
         <Literal>Master Universitario en Inteligencia Artificial</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#web"/>
+        <NamedIndividual IRI="#MUIA"/>
+        <Literal>http://www.dia.fi.upm.es/masteria/?q=es/MUIA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#Competencias"/>
         <NamedIndividual IRI="#Ontologías"/>
         <Literal>CB10, CEIA1, CEIA10, CEIA2, CEIA7</Literal>
@@ -286,6 +323,11 @@
         <DataProperty IRI="#Plan_de_Estudios"/>
         <NamedIndividual IRI="#Ontologías"/>
         <Literal>10AJ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Recursos"/>
+        <NamedIndividual IRI="#Ontologías"/>
+        <Literal>https://moodle.upm.es/titulaciones/oficiales/course/view.php?id=6730</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Semestre"/>
@@ -394,6 +436,14 @@
         <Class IRI="#Centro"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
+        <DataProperty IRI="#Asignaturas_previas"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Campus"/>
+        <Class IRI="#Centro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#Centro"/>
         <Class IRI="#Alumno"/>
     </DataPropertyDomain>
@@ -426,6 +476,10 @@
         <Class IRI="#Alumno"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Dirección"/>
+        <Class IRI="#Centro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#Email"/>
         <Class IRI="#Docente"/>
     </DataPropertyDomain>
@@ -436,6 +490,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#Idioma"/>
         <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#N_expediente"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#N_orden"/>
+        <Class IRI="#Alumno"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Nombre"/>
@@ -486,6 +548,10 @@
         <Class IRI="#Titulación"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Recursos"/>
+        <Class IRI="#Asignatura"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#Semestre"/>
         <Class IRI="#Asignatura"/>
     </DataPropertyDomain>
@@ -497,6 +563,22 @@
         <DataProperty IRI="#Tipo_estudio"/>
         <Class IRI="#Alumno"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#web"/>
+        <Class IRI="#Centro"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#web"/>
+        <Class IRI="#Titulación"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Asignaturas_previas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Campus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Centro"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -522,6 +604,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Dirección"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Email"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -532,6 +618,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#Idioma"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#N_expediente"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#N_orden"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Nombre"/>
@@ -558,6 +652,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Recursos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Semestre"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -567,6 +665,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Tipo_estudio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#web"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
